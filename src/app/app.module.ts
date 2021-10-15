@@ -1,20 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import {AppRoutingModule, ArrayOfComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
-import {SharedModule} from "./shared/shared.module";
-import {ItemsModule} from "./items/items.module";
+import { SharedModule } from "./shared/shared.module";
+import { ItemsModule } from "./items/items.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ArrayOfComponents
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    ItemsModule
+    ItemsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
