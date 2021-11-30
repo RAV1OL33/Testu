@@ -5,6 +5,7 @@ import { EventContainerComponent } from './container/event-container/event-conta
 import {SharedModule} from "../shared/shared.module";
 import { EventCardComponent } from './container/event-card/event-card.component';
 import { EventFilterComponent } from './container/event-filter/event-filter.component';
+import { CreatedEventsListComponent } from './pages/profile/created-events-list/created-events-list.component';
 
 
 @NgModule({
@@ -13,11 +14,13 @@ import { EventFilterComponent } from './container/event-filter/event-filter.comp
         EventContainerComponent,
         EventCardComponent,
         EventFilterComponent,
+        CreatedEventsListComponent,
     ],
-  exports: [
-    GalleryCarouselComponent,
-    EventContainerComponent
-  ],
+    exports: [
+        GalleryCarouselComponent,
+        EventContainerComponent,
+        CreatedEventsListComponent
+    ],
     imports: [
         CommonModule,
         SharedModule

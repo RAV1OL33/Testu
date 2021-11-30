@@ -13,5 +13,7 @@ export class EventContainerComponent implements OnInit {
   ]
   ngOnInit(): void {
   }
-
+  onChange(eventsArray: any[]){
+    this.event_cards_list = eventsArray;
+  }
 }
